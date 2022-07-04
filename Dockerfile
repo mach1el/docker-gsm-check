@@ -1,7 +1,7 @@
 FROM python:3.10.5-buster
 
-COPY requiremens.txt /
-RUN pip3 install -r requiremens.txt
+COPY requirements.txt /
+RUN pip3 install -r requirements.txt
 
 COPY simpleview.py /
 ENTRYPOINT ['python3','simpleview.py']
