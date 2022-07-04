@@ -5,4 +5,4 @@ RUN pip3 install -r /requirements.txt
 
 COPY simpleview.py /
 RUN chmod 775 /simpleview.py
-ENTRYPOINT ['./simpleview.py']
+ENTRYPOINT ["./simpleview.py"]
