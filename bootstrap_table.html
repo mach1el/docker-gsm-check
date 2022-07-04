@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <table id="data" class="table table-striped">
+    <thead>
+      <tr>
+        <th>GSM IP</th>
+        <th>Active Ports</th>
+        <th>Inactive Ports</th>
+        <th>Total active</th>
+        <th>Created date</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for content in data %}
+        <tr>
+          <td>{{ content[1] }}</td>
+          <td>{{ content[2] }}</td>
+          <td>{{ content[3] }}</td>
+          <td>{{ content[4] }}</td>
+          <td>{{ content[5] }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}
